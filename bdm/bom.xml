@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
+    <businessObjects>
+        <businessObject qualifiedName="pe.reniec.model.Acta">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaRegistro" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="estado" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="pe.reniec.model.Certificado" fetchType="LAZY" name="certificado" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pe.reniec.model.Certificado">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="tipoCert" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaEmision" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="documento" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pe.reniec.model.Ciudadano">
+            <fields>
+                <field type="STRING" length="255" name="dni" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nombres" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellidos" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaNacimiento" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="huella" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pe.reniec.model.EventoObservacion">
+            <fields>
+                <field type="FLOAT" length="255" name="id" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fecha" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="descripcion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="pe.reniec.model.Acta" fetchType="LAZY" name="acta" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pe.reniec.model.PeticionValidacion">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="dniConsultado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="institucion" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fecha" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="resultado" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pe.reniec.model.SolicitudActualizacion">
+            <fields>
+                <field type="LONG" length="255" name="id" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaSolicitud" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipoCambio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="estado" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="pe.reniec.model.Ciudadano" fetchType="LAZY" name="ciudadano" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="helen.kelly">
+      <firstName>Helen</firstName>
+      <lastName>Kelly</lastName>
+      <title>Mrs</title>
+      <jobTitle>Human resource manager</jobTitle>
+      <manager>william.jobs</manager>
+      <personalData/>
+      <professionalData>
+        <email>helen.kelly@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="walter.bates">
+      <firstName>Walter</firstName>
+      <lastName>Bates</lastName>
+      <title>Mr</title>
+      <jobTitle>Human resources benefits</jobTitle>
+      <manager>helen.kelly</manager>
+      <personalData/>
+      <professionalData>
+        <email>walter.bates@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="thomas.wallis">
+      <firstName>Thomas</firstName>
+      <lastName>Wallis</lastName>
+      <title>Mr</title>
+      <jobTitle>Consultant</jobTitle>
+      <manager>michael.morrison</manager>
+      <personalData/>
+      <professionalData>
+        <email>thomas.wallis@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="daniela.angelo">
+      <firstName>Daniela</firstName>
+      <lastName>Angelo</lastName>
+      <title>Mrs</title>
+      <jobTitle>Vice President of Sales</jobTitle>
+      <manager>william.jobs</manager>
+      <personalData/>
+      <professionalData>
+        <email>daniela.angelo@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="anthony.nichols">
+      <firstName>Anthony</firstName>
+      <lastName>Nichols</lastName>
+      <title>Mr</title>
+      <jobTitle>Account manager</jobTitle>
+      <manager>daniela.angelo</manager>
+      <personalData/>
+      <professionalData>
+        <email>anthony.nichols@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <building>70</building>
+        <address>Renwick Drive</address>
+        <zipCode>19108</zipCode>
+        <city>Philadelphia</city>
+        <state>PA</state>
+        <country>United States</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+  </users>
+  <roles>
+    <role name="Ciudadano">
+      <displayName>Ciudadano</displayName>
+    </role>
+    <role name="Profesional_Salud">
+      <displayName>Profesional_Salud</displayName>
+    </role>
+    <role name="Registrador">
+      <displayName>Registrador</displayName>
+    </role>
+    <role name="Reniec_TI">
+      <displayName>Reniec_TI</displayName>
+    </role>
+    <role name="Mesa_Partes">
+      <displayName>Mesa_Partes</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="RENIEC">
+      <displayName>RENIEC</displayName>
+    </group>
+    <group name="OREC">
+      <displayName>OREC</displayName>
+    </group>
+    <group name="Externos">
+      <displayName>Externos</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>helen.kelly</userName>
+      <roleName>Registrador</roleName>
+      <groupName>OREC</groupName>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Ciudadano</roleName>
+      <groupName>Externos</groupName>
+    </membership>
+    <membership>
+      <userName>thomas.wallis</userName>
+      <roleName>Profesional_Salud</roleName>
+      <groupName>Externos</groupName>
+    </membership>
+    <membership>
+      <userName>daniela.angelo</userName>
+      <roleName>Reniec_TI</roleName>
+      <groupName>RENIEC</groupName>
+    </membership>
+    <membership>
+      <userName>anthony.nichols</userName>
+      <roleName>Mesa_Partes</roleName>
+      <groupName>OREC</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
