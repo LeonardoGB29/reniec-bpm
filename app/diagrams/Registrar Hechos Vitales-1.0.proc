@@ -45,7 +45,7 @@
           <correlation xmi:type="process:Correlation" xmi:id="_or9SUUs2EfCDjIQQK-KU4A">
             <correlationAssociation xmi:type="expression:TableExpression" xmi:id="_or9SUks2EfCDjIQQK-KU4A"/>
           </correlation>
-          <targetProcessExpression xmi:type="expression:Expression" xmi:id="_OqT44Us3EfCDjIQQK-KU4A" name="RENIEC" content="RENIEC"/>
+          <targetProcessExpression xmi:type="expression:Expression" xmi:id="_OqT44Us3EfCDjIQQK-KU4A" name="Atencion al cliente" content="Atencion al cliente" returnTypeFixed="true"/>
           <targetElementExpression xmi:type="expression:Expression" xmi:id="_OqT44Es3EfCDjIQQK-KU4A" name="Recepcionar Acta" content="Recepcionar Acta"/>
           <messageContent xmi:type="expression:TableExpression" xmi:id="_or9SVUs2EfCDjIQQK-KU4A"/>
         </events>
