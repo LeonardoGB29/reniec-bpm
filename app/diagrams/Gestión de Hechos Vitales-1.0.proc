@@ -160,7 +160,7 @@
           <correlation xmi:type="process:Correlation" xmi:id="_KIOOsUvwEfCQ8_eS3R0nIQ">
             <correlationAssociation xmi:type="expression:TableExpression" xmi:id="_KIOOskvwEfCQ8_eS3R0nIQ"/>
           </correlation>
-          <targetProcessExpression xmi:type="expression:Expression" xmi:id="_KIOOs0vwEfCQ8_eS3R0nIQ" name="RENIEC" content="RENIEC" returnTypeFixed="true"/>
+          <targetProcessExpression xmi:type="expression:Expression" xmi:id="_KIOOs0vwEfCQ8_eS3R0nIQ" name="Atencion al cliente" content="Atencion al cliente" returnTypeFixed="true"/>
           <targetElementExpression xmi:type="expression:Expression" xmi:id="_KIOOtEvwEfCQ8_eS3R0nIQ" name="Recibir expediente" content="Recibir expediente" returnTypeFixed="true"/>
           <messageContent xmi:type="expression:TableExpression" xmi:id="_KIOOtUvwEfCQ8_eS3R0nIQ"/>
         </events>
@@ -296,7 +296,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_b6Jt2UZxEfCABuICsoBAow" fontName="Segoe UI"/>
       <styles xmi:type="notation:LineStyle" xmi:id="_b6Jt2kZxEfCABuICsoBAow"/>
       <styles xmi:type="notation:FillStyle" xmi:id="_b6Jt20ZxEfCABuICsoBAow"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b6Jt3EZxEfCABuICsoBAow" width="1320" height="250"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b6Jt3EZxEfCABuICsoBAow" width="1320" height="289"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_b6Jt3UZxEfCABuICsoBAow"/>
     <edges xmi:type="notation:Connector" xmi:id="_s8_4o0ZzEfCABuICsoBAow" type="4001" element="_s8_4oEZzEfCABuICsoBAow" source="_HknCeEvwEfCQ8_eS3R0nIQ" target="_K7jwI0vwEfCQ8_eS3R0nIQ" roundedBendpointsRadius="10" routing="Rectilinear">

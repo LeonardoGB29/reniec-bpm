@@ -132,7 +132,7 @@
             <correlation xmi:type="process:Correlation" xmi:id="_z8TuIUuXEfCftojwZn4-qg">
               <correlationAssociation xmi:type="expression:TableExpression" xmi:id="_z8TuIkuXEfCftojwZn4-qg"/>
             </correlation>
-            <targetProcessExpression xmi:type="expression:Expression" xmi:id="_z8TuI0uXEfCftojwZn4-qg" name="RENIEC" content="RENIEC" returnTypeFixed="true"/>
+            <targetProcessExpression xmi:type="expression:Expression" xmi:id="_z8TuI0uXEfCftojwZn4-qg" name="Atencion al cliente" content="Atencion al cliente" returnTypeFixed="true"/>
             <targetElementExpression xmi:type="expression:Expression" xmi:id="_z8TuJEuXEfCftojwZn4-qg" name="Registrar en Base Nacional" content="Registrar en Base Nacional" returnTypeFixed="true"/>
             <messageContent xmi:type="expression:TableExpression" xmi:id="_z8TuJUuXEfCftojwZn4-qg"/>
           </events>
