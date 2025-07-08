@@ -149,7 +149,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_RjpDl1VVEfCp18PjKAquWQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_RjpDllVVEfCp18PjKAquWQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:SendTask" xmi:id="_ZbM1sFVVEfCp18PjKAquWQ" name="Enviar mensaje de rechazo con observación" incoming="_YVqJ-1VVEfCp18PjKAquWQ" outgoingMessages="_1zUacFVYEfCp18PjKAquWQ">
+        <elements xmi:type="process:SendTask" xmi:id="_ZbM1sFVVEfCp18PjKAquWQ" name="Enviar observación" incoming="_YVqJ-1VVEfCp18PjKAquWQ" outgoingMessages="_1zUacFVYEfCp18PjKAquWQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_YVqJ8VVVEfCp18PjKAquWQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_YVqJ8FVVEfCp18PjKAquWQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_YVqJ8lVVEfCp18PjKAquWQ" name="" content="" returnTypeFixed="true"/>
@@ -242,7 +242,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_RjqRsFVVEfCp18PjKAquWQ" name="No" target="_RjocgFVVEfCp18PjKAquWQ" source="_N0DzcFVVEfCp18PjKAquWQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_RjqRsVVVEfCp18PjKAquWQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_RjqRslVVEfCp18PjKAquWQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_RjqRslVVEfCp18PjKAquWQ" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_YVqJ-1VVEfCp18PjKAquWQ" target="_ZbM1sFVVEfCp18PjKAquWQ" source="_RjocgFVVEfCp18PjKAquWQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_YVqJ_FVVEfCp18PjKAquWQ"/>
@@ -250,7 +250,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_D8JdsFVWEfCp18PjKAquWQ" name="Sí" target="_SdC7UFVWEfCp18PjKAquWQ" source="_N0DzcFVVEfCp18PjKAquWQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_D8JdsVVWEfCp18PjKAquWQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_D8JdslVWEfCp18PjKAquWQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_D8JdslVWEfCp18PjKAquWQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_TX1voFVWEfCp18PjKAquWQ" target="_6vrcMFVXEfCp18PjKAquWQ" source="_SdC7UFVWEfCp18PjKAquWQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_TX1voVVWEfCp18PjKAquWQ"/>
