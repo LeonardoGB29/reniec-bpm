@@ -55,6 +55,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="pe.reniec.model.Correcion">
+            <fields>
+                <field type="TEXT" length="255" name="informe_errores" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="pe.reniec.model.EventoObservacion">
             <fields>
                 <field type="FLOAT" length="255" name="id" nullable="false" collection="false"/>
