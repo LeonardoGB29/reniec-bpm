@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "430cd25f-c18a-430a-9c9a-68c72700c001",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1753833762743,
+  "lastUpdate" : 1753842610675,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -171,7 +171,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.tipoRegistro"
+                    "value" : "data.formInput.tipoRegistro"
                   }
                 },
                 "reference" : "355871a3-26c7-4be4-b370-64818cb86a2f",
@@ -230,7 +230,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.dniSolicitante"
+                    "value" : "data.formInput.dniSolicitante"
                   },
                   "required" : {
                     "type" : "constant",
@@ -303,68 +303,85 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "expression",
                           "value" : "formInput.tipoRegistro === \"NAC\""
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Archivo Nacimiento"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.archivoNacimiento"
-                        },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "errorContent" : {
-                          "type" : "variable"
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Solicitud Nacimiento"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "data.formInput.solicitudTexto"
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "fb4c0aeb-1c13-4159-be7b-68fc632ab582",
+                      "reference" : "3b503098-7251-4bb8-8502-657e9bc22a48",
                       "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
+                      "id" : "pbInput"
                     }
                   ],
                   [
@@ -456,68 +473,85 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "expression",
                           "value" : "formInput.tipoRegistro === \"MAT\""
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Archivo Matrimonio"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.archivoMatrimonio"
-                        },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "errorContent" : {
-                          "type" : "variable"
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Solicitud Matrimonio"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "data.formInput.solicitudTexto"
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "69b9b9bc-8c8d-4846-8a75-9e1f489fa7fb",
+                      "reference" : "0dbd77e9-453d-4b09-bf75-9afa085785f9",
                       "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
+                      "id" : "pbInput"
                     }
                   ],
                   [
@@ -609,68 +643,85 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "expression",
                           "value" : "formInput.tipoRegistro === \"DEF\""
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Archivo Defunción"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.archivoDefuncion"
-                        },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "errorContent" : {
-                          "type" : "variable"
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Solicitud Defunción"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "data.formInput.solicitudTexto"
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "4b5abf1c-c149-42cc-9272-a6dada8e3078",
+                      "reference" : "b4c7d2fb-3a50-475f-92aa-082beda46882",
                       "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
+                      "id" : "pbInput"
                     }
                   ],
                   [
@@ -792,7 +843,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "!(   (formInput.tipoRegistro === 'NAC' && formInput.archivoNacimiento) ||   (formInput.tipoRegistro === 'MAT' && formInput.archivoMatrimonio) ||   (formInput.tipoRegistro === 'DEF' && formInput.archivoDefuncion) )"
+                    "value" : "!(formInput.tipoRegistro && formInput.dniSolicitante && formInput.solicitudTexto)"
                   },
                   "alignment" : {
                     "type" : "constant",
