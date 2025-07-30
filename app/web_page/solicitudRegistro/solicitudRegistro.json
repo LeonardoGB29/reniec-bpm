@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "430cd25f-c18a-430a-9c9a-68c72700c001",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750657350785,
+  "lastUpdate" : 1753833762743,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -314,8 +314,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "formInput.tipoRegistro === \"NAC\""
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -347,17 +347,76 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "url" : {
                           "type" : "constant",
                           "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
                         }
                       },
                       "reference" : "fb4c0aeb-1c13-4159-be7b-68fc632ab582",
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "formInput.tipoRegistro === 'NAC' && !$form.archivoNacimiento.$viewValue && $form.$submitted"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "\"Debe subir el archivo de nacimiento\""
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "e68c9536-19d0-4691-a478-a27d673f051a",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
                     }
                   ]
                 ]
@@ -408,8 +467,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "formInput.tipoRegistro === \"MAT\""
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -441,17 +500,76 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "url" : {
                           "type" : "constant",
                           "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
                         }
                       },
                       "reference" : "69b9b9bc-8c8d-4846-8a75-9e1f489fa7fb",
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "formInput.tipoRegistro === 'MAT' && !$form.archivoMatrimonio.$viewValue && $form.$submitted"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "\"Debe subir el archivo de matrimonio\""
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "ec724720-98e5-4be3-8637-74aedc4346e1",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
                     }
                   ]
                 ]
@@ -502,8 +620,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "formInput.tipoRegistro === \"DEF\""
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -519,7 +637,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Archivo Defuncion"
+                          "value" : "Archivo Defunción"
                         },
                         "placeholder" : {
                           "type" : "constant",
@@ -535,17 +653,76 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "url" : {
                           "type" : "constant",
                           "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
                         }
                       },
                       "reference" : "4b5abf1c-c149-42cc-9272-a6dada8e3078",
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "formInput.tipoRegistro === 'DEF' && !$form.archivoDefuncion.$viewValue && $form.$submitted"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "\"Debe subir el archivo de defunción\""
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "74177767-657b-4636-94f5-e1236d3ff4e7",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
                     }
                   ]
                 ]
@@ -615,7 +792,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "!(   (formInput.tipoRegistro === 'NAC' && formInput.archivoNacimiento) ||   (formInput.tipoRegistro === 'MAT' && formInput.archivoMatrimonio) ||   (formInput.tipoRegistro === 'DEF' && formInput.archivoDefuncion) )"
                   },
                   "alignment" : {
                     "type" : "constant",
