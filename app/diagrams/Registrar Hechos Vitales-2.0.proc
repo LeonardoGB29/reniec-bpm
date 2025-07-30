@@ -451,7 +451,14 @@
             </correlation>
             <targetProcessExpression xmi:type="expression:Expression" xmi:id="_QD9P02zKEfCFZuVswvzVbQ" name="Ciudadano" content="Ciudadano" returnTypeFixed="true"/>
             <targetElementExpression xmi:type="expression:Expression" xmi:id="_QD9P1GzKEfCFZuVswvzVbQ" name="Recibir observación vital" content="Recibir observación vital" returnTypeFixed="true"/>
-            <messageContent xmi:type="expression:TableExpression" xmi:id="_QD9P1WzKEfCFZuVswvzVbQ"/>
+            <messageContent xmi:type="expression:TableExpression" xmi:id="_QD9P1WzKEfCFZuVswvzVbQ">
+              <expressions xmi:type="expression:ListExpression" xmi:id="_72sHoGz9EfCwZL0xiv7djw">
+                <expressions xmi:type="expression:Expression" xmi:id="_72sHoWz9EfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" returnTypeFixed="true"/>
+                <expressions xmi:type="expression:Expression" xmi:id="_72susGz9EfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" type="TYPE_VARIABLE" returnType="pe.reniec.model.SolicitudRegistro">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_72susWz9EfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
+                </expressions>
+              </expressions>
+            </messageContent>
           </events>
         </elements>
         <elements xmi:type="process:CallActivity" xmi:id="_YN4LAGzPEfCFZuVswvzVbQ" name="Inscribir acta" outgoing="_yEcgYWzPEfCFZuVswvzVbQ" incoming="_lTgAoGzTEfCFZuVswvzVbQ">
@@ -603,8 +610,8 @@
           <messageContent xmi:type="expression:TableExpression" xmi:id="_NAnz9WzFEfCFZuVswvzVbQ">
             <expressions xmi:type="expression:ListExpression" xmi:id="_-eFJAGzvEfCwZL0xiv7djw">
               <expressions xmi:type="expression:Expression" xmi:id="_-eFJAWzvEfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" returnTypeFixed="true"/>
-              <expressions xmi:type="expression:Expression" xmi:id="_-eFJAmzvEfCwZL0xiv7djw" name="newScript()" content="solicitudRegistro" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-eFJA2zvEfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
+              <expressions xmi:type="expression:Expression" xmi:id="_-eFJAmzvEfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" type="TYPE_VARIABLE" returnType="pe.reniec.model.SolicitudRegistro">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-EdmwGz9EfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
               </expressions>
             </expressions>
           </messageContent>
@@ -619,6 +626,14 @@
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_CSS2xWzKEfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_CSS2x2zKEfCFZuVswvzVbQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_CSS2xmzKEfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <correlation xmi:type="expression:TableExpression" xmi:id="_EurcAGz-EfCwZL0xiv7djw"/>
+        <messageContent xmi:type="expression:Operation" xmi:id="_FCwOkGz-EfCwZL0xiv7djw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_FCyDwWz-EfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" type="TYPE_VARIABLE" returnType="pe.reniec.model.SolicitudRegistro">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Few1IGz-EfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_FCyDwGz-EfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" type="MESSAGE_ID_TYPE" returnType="pe.reniec.model.SolicitudRegistro"/>
+          <operator xmi:type="expression:Operator" xmi:id="_FCwOkWz-EfCwZL0xiv7djw" type="ASSIGNMENT"/>
+        </messageContent>
       </elements>
       <elements xmi:type="process:Task" xmi:id="_Ljlb8GzKEfCFZuVswvzVbQ" name="Subsanar observación" outgoing="_ZSATwGzKEfCFZuVswvzVbQ" incoming="_JY8wY2zKEfCFZuVswvzVbQ" actor="_3K4sMGzDEfCFZuVswvzVbQ">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_JY8JUWzKEfCFZuVswvzVbQ" name="" content="" returnTypeFixed="true"/>
