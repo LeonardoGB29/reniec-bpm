@@ -54,6 +54,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_2JM5IWy2EfCFZuVswvzVbQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_2JM5Imy2EfCFZuVswvzVbQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_2JM5I2y2EfCFZuVswvzVbQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_9qidIGz4EfCwZL0xiv7djw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_9qidIWz4EfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" type="TYPE_VARIABLE" returnType="pe.reniec.model.SolicitudRegistro">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-DTicGz4EfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_9qidImz4EfCwZL0xiv7djw" name="newScript()" content="if (&#xD;&#xA;    solicitudRegistro.dniSolicitante == null || &#xD;&#xA;    solicitudRegistro.dniSolicitante.trim().isEmpty() ||&#xD;&#xA;    solicitudRegistro.solicitudTexto == null || &#xD;&#xA;    solicitudRegistro.solicitudTexto.trim().isEmpty()&#xD;&#xA;) {&#xD;&#xA;    solicitudRegistro.estado = &quot;Faltan requisitos&quot;&#xD;&#xA;    solicitudRegistro.observaciones = &quot;Faltan datos obligatorios para continuar.&quot;&#xD;&#xA;} else {&#xD;&#xA;    solicitudRegistro.estado = &quot;Requisitos completos&quot;&#xD;&#xA;    solicitudRegistro.observaciones = &quot;Todos los datos requeridos han sido validados correctamente.&quot;&#xD;&#xA;}&#xD;&#xA;return solicitudRegistro&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="pe.reniec.model.SolicitudRegistro">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_CkZIAGz5EfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_9qidI2z4EfCwZL0xiv7djw" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_2JM5JGy2EfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_2JM5JWy2EfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_2JM5Jmy2EfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
