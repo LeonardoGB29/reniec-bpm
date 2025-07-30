@@ -639,15 +639,38 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_JY8JUWzKEfCFZuVswvzVbQ" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_JY8JUGzKEfCFZuVswvzVbQ" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_JY8JUmzKEfCFZuVswvzVbQ" name="" content="" returnTypeFixed="true"/>
+        <operations xmi:type="expression:Operation" xmi:id="_isdzgG0AEfCwZL0xiv7djw">
+          <leftOperand xmi:type="expression:Expression" xmi:id="_isdzgW0AEfCwZL0xiv7djw" name="solicitudRegistro" content="solicitudRegistro" type="TYPE_VARIABLE" returnType="pe.reniec.model.SolicitudRegistro">
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jQtwEG0AEfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
+          </leftOperand>
+          <rightOperand xmi:type="expression:Expression" xmi:id="_isdzgm0AEfCwZL0xiv7djw" name="newScript()" content="solicitudRegistro.tipoRegistro = solicitudRegistroInput.tipoRegistro&#xD;&#xA;solicitudRegistro.observaciones = solicitudRegistroInput.observaciones&#xD;&#xA;solicitudRegistro.solicitudTexto = solicitudRegistroInput.solicitudTexto&#xD;&#xA;return solicitudRegistro&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="pe.reniec.model.SolicitudRegistro">
+            <referencedElements xmi:type="process:ContractInput" xmi:id="_kGT7UG0AEfCwZL0xiv7djw" name="solicitudRegistroInput" type="COMPLEX" createMode="false"/>
+            <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kGT7UW0AEfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro"/>
+          </rightOperand>
+          <operator xmi:type="expression:Operator" xmi:id="_isdzg20AEfCwZL0xiv7djw" type="ASSIGNMENT"/>
+        </operations>
         <loopCondition xmi:type="expression:Expression" xmi:id="_JY8JU2zKEfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_JY8JVGzKEfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_JY8JVWzKEfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_JY8JV2zKEfCFZuVswvzVbQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_JY8JVmzKEfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <formMapping xmi:type="process:FormMapping" xmi:id="_LjmqGGzKEfCFZuVswvzVbQ">
-          <targetForm xmi:type="expression:Expression" xmi:id="_BvTywGz8EfCwZL0xiv7djw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_T8o-gGz_EfCwZL0xiv7djw" name="subsanarObservacion" content="7b9018c0-d66e-4cb2-b87d-d139f8bf8dac" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
-        <contract xmi:type="process:Contract" xmi:id="_LjmqF2zKEfCFZuVswvzVbQ"/>
+        <contract xmi:type="process:Contract" xmi:id="_LjmqF2zKEfCFZuVswvzVbQ">
+          <inputs xmi:type="process:ContractInput" xmi:id="_QIohYGz_EfCwZL0xiv7djw" name="solicitudRegistroInput" type="COMPLEX" dataReference="solicitudRegistro" createMode="false">
+            <inputs xmi:type="process:ContractInput" xmi:id="_QIohYWz_EfCwZL0xiv7djw" name="id" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_QIohYmz_EfCwZL0xiv7djw" name="tipoRegistro" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_QIohY2z_EfCwZL0xiv7djw" name="dniSolicitante" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_QIohZGz_EfCwZL0xiv7djw" name="fechaSolicitud" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_QIohZWz_EfCwZL0xiv7djw" name="estado" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_QIohZmz_EfCwZL0xiv7djw" name="observaciones" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_QIohZ2z_EfCwZL0xiv7djw" name="solicitudTexto" createMode="false"/>
+          </inputs>
+          <constraints xmi:type="process:ContractConstraint" xmi:id="_QIohaGz_EfCwZL0xiv7djw" expression="!solicitudRegistroInput?.id || solicitudRegistroInput?.id.isLong()" errorMessage="A Long value is expected for SolicitudRegistro.id" name="type_long_solicitudRegistroInput_id">
+            <inputNames>solicitudRegistroInput</inputNames>
+          </constraints>
+        </contract>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_LjmqGmzKEfCFZuVswvzVbQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_2yLjYGzmEfCwZL0xiv7djw" name="solicitudRegistro" dataType="_2JOHDGy2EfCFZuVswvzVbQ" className="pe.reniec.model.SolicitudRegistro">
